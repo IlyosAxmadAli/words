@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <header class="header-container container">
+        <div class="header-div">
+            <img class="site-logo" src="./images/site-logo.svg" alt="book">
+            <div class="dropdown">
+                <h5 class="font-select">Sans Serif</h5>
+                <img src="./images/select.svg" alt="select">
+                <div class="dropdown-content">
+                    <li class="sans-serif">Sans Serif</li>
+                    <li class="serif">Serif</li>
+                    <li class="mono">Mono</li>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class='ball'></div>
+                </label>
+            </div>
+            <img src="./images/moon.svg" alt="moon" class="dark-mode-img">
+        </div>
+    </header>
+    <main class="main-container container">
+        <div class="searcher">
+            <form class="search-form">
+                <input class="input" type="text">
+                <button class="button" type="submit">
+                    <img class="img" src="./images/search.svg" alt="search">
+                </button>
+            </form>
+        </div>
+        <p class="error"></p>
+        <div class="update"></div>
+    </main>
+    <footer class="footer container">
+        <div class="footer-link">
+            <h6 class="footer-text">
+                Source
+            </h6>
+            <a href="https://en.wiktionary.org/wiki/keyboard" class="link">
+                https://en.wiktionary.org/wiki/keyboard
+            </a>
+            <img src="./images/link.svg" alt="link">
+        </div>
+    </footer>
+</body>
+
+</html>
